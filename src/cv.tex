@@ -1,0 +1,280 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com), Harsh (harsh.gadgil@gmail.com)
+% and ZabuzaW (zabuza.dev@gmail.com)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+\cvname{{HRISTIJAN\\[0.5em]CHOCHEVSKI}} % Your name
+\cvjobtitle{Software Engineer, 25} % Job
+\cvavatar{picture.jpg} % Avatar
+% title/career
+
+\cvaddress{Skopje, North Macedonia} % Address
+\cvlinkedin{/in/hristijan-chochevski} % LinkedIn site
+\cvgithub{SmartW0rker} % Github site
+\cvgithubRepos{17} % GitHub amount of repositories
+\cvgithubForks{} % GitHub amount of forks
+\cvgithubStars{7} % GitHub amount of stars
+\cvsite{} % Personal website
+\cvnumberphone{+38976354210} % Phone number
+\cvmail{hristijanchochevski@gmail.com} % Email address
+\cvstackoverflow{} % StackOverflow user name
+\cvstackoverflowId{} % StackOverflow user id
+\cvstackoverflowRep{} % StackOverflow user reputation
+\cvstackoverflowGold{} % StackOverflow amount of gold badges
+\cvstackoverflowSilver{} % StackOverflow amount of silver badges
+\cvstackoverflowBronze{} % StackOverflow amount of bronze badges
+% Skill overview bubbles
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+		\textbf{Software}\\\textbf{Engineering},
+		\textbf{Algorithms \&}\\\textbf{Data structures},
+        \textbf{Web}\\\textbf{~~~~~Dev~~~~~},
+		\textbf{~DevOps~},
+        \textbf{Math}\\\textbf{~~Analysis~~},
+        \textbf{Mobile}\\\textbf{Flutter},
+        \textbf{Backend}\\\textbf{~~RESTful~~},
+        \textbf{~~~AWS~~~}
+	}
+}
+
+% Programming skill bars
+\programming{
+	{Dart || Flutter / 2.5},
+	{SQL $\textbullet$ HTML $\textbullet$ CSS $\textbullet$ Bash / 4},
+	{Java Script || React.Js / 4.6},
+	{Java || Spring Boot / 6}}
+
+% Language overview bubbles
+\newcommand\languages{ 
+~
+	\smartdiagram[bubble diagram]{
+		\textbf{~~~Macedonian~~~}\\\textbf{native},
+		\textbf{~~~~~~~~English~~~~~~~~}\\\textbf{C2},
+		\textbf{German}\\\textbf{A2}
+	}
+}
+
+% Technologies
+\technologies{
+	{materialteal!35/Java/Java SE,Java EE,Jakarta EE,JDBC,\vspace{1mm}\\ Hibernate, JPA,JBoss, WildFly, Tomcat, Jackson,Apache Commons,\vspace{1mm}\\  HttpComponents, Selenium, JUnit,\vspace{1mm}\\
+    Mockito, SLF4J, Log4j},
+	{materialteal!35/Spring/Boot, Framework, Data, Security,\vspace{1mm}\\ Session, Batch, Web Services, Cloud, Actuator},
+	{materialteal!35/Frontend $\textbullet$ Mobile/React.Js, Flutter, Thymeleaf},
+	{materialteal!35/Databases/PostgreSQL, Oracle DB, MySQL,\vspace{1mm}\\ MongoDB, H2},
+	{materialteal!35/DevOps/GitHub, GitLab, Bitbucket, AWS, Docker, Docker Compose, Jenkins},
+	{materialamber!20/Build Management tools/Maven, Gradle}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makesidebarFirst % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 Profile
+%----------------------------------------------------------------------------------------
+\section{Profile}
+
+\begin{itemize}
+	\item \textbf{Bachelor of Software engineering and information systems }
+	\item \textbf{3 years} of professional programming experience
+    \item \textbf{AWS certificated} fundamental and cloud practitioner 
+	\item \textbf{Math enthusiast} with many national awards and acknowledgments
+    \item \textbf{Collaborative team player} with good communication skills
+\end{itemize}
+
+\vspace{6mm}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    		{Dec 2023 -}
+            {Jul 2024}
+        		{Software Engineer}
+        		{Kiimo, Skopje}
+        		{Java 21, Java 7, Spring, EJB, Dart, Flutter, Maven, Gradle, JBoss, WildFly, Git, Oracle DB, Jira}
+        		{\begin{itemize}
+        			\item \textbf{Migrated an EJB application} from JBoss AS 4.0.3 with Java 7 to support WildFly 10 and Java 8
+                    \item Developed a mobile application using \textbf{Flutter}
+        			\item Built a service related to HR and finances using \textbf{Spring Boot and Java 21}
+        			\item Adding new features to the EJB application
+                    
+        		\end{itemize}}\\
+     	\twentyitem
+    		{Apr 2023 -}
+		{Nov 2023}
+        		{Backend developer}
+        		{\href{https://symphony-solutions.com/}{Symphony Solutions, Skopje}}
+        		{Java 8, Java 11, Spring boot, SOAP, AWS, Jenkins, Git, Bitbucket, MongoDB, MySQL, Jira}
+        		{\begin{itemize}
+        			\item Collaborated with an \textbf{international team} on a software solution for \textbf{EasyJet}
+                    \item Had opportunity to work and learn about \textbf{microservices architecture}
+                    \item  Developed new features for services built with \textbf{Spring Boot}
+        			\item Working with \textbf{SOAP services} on the SOAP layer of the product
+        		\end{itemize}}\\
+     	\twentyitem
+    		{Mar 2022 -}
+		{Dec 2022}
+        		{Full-Stack developer}
+        		{\href{https://see.asseco.com/}{Asseco SEE, Skopje}}
+        		{Java 11, Java 17, Spring boot, React.Js, Git, GitLab, Oracle DB, Jira}
+        		{\begin{itemize}
+        			\item Implementing backend functionalities using Spring Boot
+        			\item Developing frontend features using React.js
+        			\item Working with Databases such as Oracle DB and MySQL
+        			\item Writing technical documentation and user manuals for the application
+        		\end{itemize}}\\
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{2018 - 2023~~~~}
+        {}
+        {B.Sc. in Software Engineering \& Information Systems}
+        {\href{https://www.finki.ukim.mk/en}{FINKI, Skopje}}
+        {}
+        {}
+	\twentyitem
+    	{2014 - 2018}
+		{}
+        {High school mathematics major}
+        {\href{https://acoruskovski.edu.mk/}{High school -“Aco Ruskovski“}}
+        {}
+        {}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+\newpage
+
+\makesidebarSecond % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 Awards
+%----------------------------------------------------------------------------------------
+
+\section{Acknowledgment and recognition}
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    		{2016/17}
+		{}
+        		{Matematics without borders}
+        		{\href{https://mathwithoutborders.bg/public_html/en/}{Link}}
+        		{}
+        		{\begin{itemize}
+        			\item 2016 - Autumn : Gold medal
+                    \item 2017 - Winter : Bronze medal
+                    \item 2017 - Spring : Bronze medal
+        		\end{itemize}}\\
+        	\twentyitem
+    		{2014-2018}
+		{}
+        		{Macedonian national mathematics competition}
+        		{\href{https://smm.org.mk/en/}{Link}}
+        		{}
+        		{\begin{itemize}
+        			\item 2015 National competition: third award
+                    \item 2016 National competition: second award
+                    \item 2018 National competition: third award
+        		\end{itemize}}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\vspace{6mm}
+
+\section{Certifications and courses}
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    		{Dec 2024}
+		{}
+        		{AWS Cloud Practitioner}
+        		{\href{https://www.credly.com/badges/5ec185ac-c564-4941-b258-3169c7152ae7}{Link}}
+        		{}
+        		{}\\
+	\twentyitem
+    		{Jun 2024}
+		{}
+        		{AWS Cloud Essentials}
+        		{\href{https://link.springer.com/chapter/10.1007/978-3-662-54577-5_27}{Link}}
+        		{}
+        		{}\\
+        	\twentyitem
+    		{Feb 2023}
+		{}
+        		{Udeny: Master Spring Boot 3 \& Spring Framework 6 with Java}
+        		{\href{https://www.udemy.com/certificate/UC-1aac444c-0cd8-485f-8480-8e6c3bfbb18a/}{Link}}
+        		{}
+        		{}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\vspace{6mm}
+
+%----------------------------------------------------------------------------------------
+%	 Projects
+%----------------------------------------------------------------------------------------
+
+\section{Projects (4 of 17)}
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    		{Feb 2023 -}
+		{Jul 2023}
+        		{publishing-results-app}
+        		{\href{https://github.com/SmartW0rker/publishing-results-app}{github/publishing-results-app}}
+        		{Java 17, Spring boot 3.0, Spring Data, Spring Web, Actuator, PosgreSQL, Docker, Docker Compose, OpenAPI}
+        		{\hspace*{1em}This is my graduation project. The goal is to create a software platform where students can view and manage all their subject activities and results. Students will have access to their semester results, individual subject scores from exams and activities, and the ability to search for specific subject results, partial exam results, and more!\vspace{1em}}
+
+	\twentyitem
+    		{Apr 2022}
+		{}
+        		{library-api}
+        		{\href{https://github.com/SmartW0rker/library-api}{github/library-api}}
+        		{Java 11,Spring boot, Maven, Heroku}
+        		{This is the backend for a library app where librarian can add new book, modify something related about the digital record for the book, remove a book from the library,set as rented book and few more functionalities.\vspace{1em}}
+	\twentyitem
+    		{Apr 2022}
+		{}
+        		{library-app}
+        		{\href{https://github.com/SmartW0rker/library-api}{github/library-app}}
+        		{React 17, Axios, Bootstrap, CSS, Heroku}
+        		{This is the frontend for the library app.\vspace{1em}}
+	\twentyitem
+    		{Apr 2022}
+		{}
+        		{SpringBootInDetails}
+        		{\href{https://github.com/SmartW0rker/SpringBootInDetails}{github/SpringBootInDetails}}
+        		{Java 17, Spring Framework, Spring Boot}
+        		{Git repository with projects which elaborates Spring Framework documentation.}
+                
+\end{twenty}
+
+\end{document} 
